@@ -44,20 +44,19 @@ div.container div.list{
     position: relative;
     bottom: 40px;
     max-height: 350px;
-    
+    margin-top: 20px;
     overflow: auto;
+    background-color: #ffffff;
 }
 ul.ullist{
     list-style: none;
-    background-color: #ffffff;
-    margin-top: 20px;
     padding: 0.1px 0 0 0 ;
+    margin: 0;
 }
 ul.ullist li{
 display: flex;
 border-bottom: solid rgba(128, 128, 128, 0.1);
 margin: 10px;
-min-width: ;
 }
 
 ul.ullist li p.check{
@@ -92,7 +91,7 @@ ul.ullist li p.delete{
     display: flex;
     text-align: center;
     position: fixed;
-    bottom: 40px;
+    bottom: 30px;
     margin: auto;
     width: 40%;
 }
