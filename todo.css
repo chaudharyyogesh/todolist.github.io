@@ -1,0 +1,108 @@
+html body{
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 128, 128, 0.2);
+}
+
+body div.container{
+    position: relative;
+    margin: auto;
+    max-width: 40%;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+ div.header{
+    background-image: url("backimg.png");
+    background-color: teal;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 20px;
+} div.header div.reset{
+    position: relative;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+div.header div.reset img:hover{
+    cursor: pointer;
+
+}
+
+div.header div.date{
+    position: relative;
+    text-align: left;
+    top: 100px;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+div.container div.list{
+    position: relative;
+    bottom: 40px;
+    max-height: 350px;
+    
+    overflow: auto;
+}
+ul.ullist{
+    list-style: none;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 0.1px 0 0 0 ;
+}
+ul.ullist li{
+display: flex;
+border-bottom: solid rgba(128, 128, 128, 0.1);
+margin: 10px;
+min-width: ;
+}
+
+ul.ullist li p.check{
+    position: relative;
+    top: 4px;
+    background-image: url("uncheck.png");
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 15px;
+    cursor: pointer;
+}
+ul.ullist li p.text{
+    font-size: 20px;
+    position: relative;
+    bottom: 4px;
+    min-width: 320px;
+    max-width: 320px;
+    overflow: auto;
+}
+ul.ullist li p.delete{
+    background-image: url("delete.png");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.add_todo{
+    display: flex;
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    margin: auto;
+    width: 40%;
+}
+.add_todo img{
+    margin: 10px;
+}
+.add_todo input{
+    border-style: none;
+    background-color: rgba(0, 128, 128, 0.185);
+    border-radius: 10px;
+    padding: 15px 0 15px 10px ;
+    width: 80%;
+}
