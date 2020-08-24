@@ -43,6 +43,7 @@ div.header div.date{
 div.container div.list{
     position: relative;
     bottom: 40px;
+    min-height: 350px;
     max-height: 350px;
     margin-top: 20px;
     overflow: auto;
@@ -59,12 +60,23 @@ border-bottom: solid rgba(128, 128, 128, 0.1);
 margin: 10px;
 }
 
-ul.ullist li p.check{
+ul.ullist li p.uncheck{
     position: relative;
     top: 4px;
     background-image: url("uncheck.png");
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 15px;
+    cursor: pointer;
+}
+ul.ullist li p.check{
+    position: relative;
+    top: 4px;
+    background-image: url("check.png");
+    width: 17px;
+    height: 17px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 15px;
@@ -74,9 +86,12 @@ ul.ullist li p.text{
     font-size: 20px;
     position: relative;
     bottom: 4px;
-    min-width: 320px;
-    max-width: 320px;
+    min-width: 85%;
+    max-width: 85%;
     overflow: auto;
+}
+ul.ullist li p.complete{
+    opacity: 0.4;
 }
 ul.ullist li p.delete{
     background-image: url("delete.png");
@@ -104,4 +119,22 @@ ul.ullist li p.delete{
     border-radius: 10px;
     padding: 15px 0 15px 10px ;
     width: 80%;
+}
+
+@media only screen and (max-width:800px)
+{
+    ul.ullist li p.text {
+        min-width: 80%;
+    }
+
+}
+@media only screen and (max-width:600px)
+{
+    ul.ullist li p.text {
+        min-width: 60%;
+    }
+    .date{
+        font-size: 13px;
+    }
+
 }
